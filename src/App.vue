@@ -4,13 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <div class="flex flex-col min-h-screen">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <RouterLink to="/" class="text-2xl font-bold text-gray-900 group flex items-center gap-2">
           <img src="/logo.png" alt="Anshul Video Logo" class="h-12 w-auto" />
         </RouterLink>
         <div class="space-x-8">
-          <RouterLink to="/work" class="text-gray-600 hover:text-primary font-medium transition-colors">My Work</RouterLink>
+          <RouterLink to="/work" class="text-gray-600 hover:text-primary font-medium transition-colors hover:tracking-wide">My Work</RouterLink>
         </div>
         <a href="https://wa.me/919910843251" target="_blank" class="btn-cta text-sm bg-[#25D366] hover:bg-[#128C7E] text-white border-none flex items-center gap-2">
           <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

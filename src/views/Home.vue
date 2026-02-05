@@ -180,7 +180,7 @@ onUnmounted(() => {
             <RouterLink to="/work" class="btn-cta text-lg bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               See My Work
             </RouterLink>
-            <a href="https://wa.me/919910843251" target="_blank" class="px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-primary hover:text-primary transition-all hover:bg-sky-50">
+            <a href="https://wa.me/919910843251" target="_blank" class="px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-primary hover:text-primary transition-all hover:bg-sky-50 shadow-lg hover:shadow-xl transform hover:-translate-y-1 bg-white">
               Contact Me
             </a>
           </div>
