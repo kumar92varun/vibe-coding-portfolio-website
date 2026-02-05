@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "title": "Corporate Event Highlights",
+        "description": "A high-energy highlight reel for a tech conference.",
+        "thumbnail": "https://placehold.co/600x400/87CEEB/ffffff?text=Corporate+Event",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "category": "Corporate",
+        "tags": [
+            "Event",
+            "Highlight",
+            "Business"
+        ],
+        "date": "2024-03-15"
+    },
+    {
+        "id": "2",
+        "title": "Travel Vlog: Mountains",
+        "description": "Cinematic travel vlog editing with color grading.",
+        "thumbnail": "https://placehold.co/600x400/333333/ffffff?text=Travel+Vlog",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "category": "Social Media",
+        "tags": [
+            "Vlog",
+            "Travel",
+            "Cinematic"
+        ],
+        "date": "2024-02-10"
+    },
+    {
+        "id": "3",
+        "title": "Product Commercial",
+        "description": "Short social media ad for a lifestyle product.",
+        "thumbnail": "https://placehold.co/600x400/eeeeee/000000?text=Product+Ad",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "category": "Commercial",
+        "tags": [
+            "Ad",
+            "Product",
+            "Social Media"
+        ],
+        "date": "2024-01-20"
+    }
+]
