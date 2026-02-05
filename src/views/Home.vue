@@ -187,22 +187,7 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
-        <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-8 tracking-tight">
-          Taking the <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-purple-600">Pain</span> Out of <br>Video Creation
-        </h1>
-        <p class="text-xl lg:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-          I help creators and professionals edit, polish, and publish high-quality videos for YouTube and social media. You film, I handle the rest.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-5 justify-center">
-          <RouterLink to="/work" class="btn-cta text-lg bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            See My Work
-          </RouterLink>
-          <a href="https://wa.me/919910843251" target="_blank" class="px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-primary hover:text-primary transition-all hover:bg-sky-50">
-            Contact Me
-          </a>
-        </div>
-      </div>
-    </section>
+
 
     <!-- Services Section -->
     <section class="py-20">
