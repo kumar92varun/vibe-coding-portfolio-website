@@ -150,6 +150,9 @@ onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
   cancelAnimationFrame(animationFrameId);
 });
+import ReelsShortsIcon from '../assets/reels-shorts-icon.png'
+import FacelessIcon from '../assets/faceless-icon.png'
+import TalkingHeadIcon from '../assets/talking-head-icon.png'
 </script>
 
 <template>
@@ -170,19 +173,19 @@ onUnmounted(() => {
       <div class="container relative z-10 mx-auto px-6 text-center pointer-events-none">
         <!-- Re-enable pointer events for interactive children -->
         <div class="pointer-events-auto">
-          <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-8 tracking-tight">
-            Taking the <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-purple-600">Pain</span> Out of <br>Video Creation
+          <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-8 tracking-tight">
+            Focus on <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-purple-600">Creating</span>, <br>I’ll Handle the Editing
           </h1>
-          <p class="text-xl lg:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            I help creators and professionals edit, polish, and publish high-quality videos for YouTube and social media. You film, I handle the rest.
-          </p>
+          <div class="bg-white/40 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-white/30 inline-block max-w-3xl mx-auto mb-12">
+            <p class="text-xl lg:text-2xl text-gray-700 leading-relaxed">
+              I help busy professionals finally launch their long-pending social media channels. You simply record your insights, and I handle the entire editing process - turning your passion into published content.
+            </p>
+          </div>
           <div class="flex flex-col sm:flex-row gap-5 justify-center">
             <RouterLink to="/work" class="btn-cta text-lg bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-xl font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               See My Work
             </RouterLink>
-            <a href="https://wa.me/919910843251" target="_blank" class="px-8 py-4 rounded-xl font-semibold border-2 border-gray-200 hover:border-primary hover:text-primary transition-all hover:bg-sky-50 shadow-lg hover:shadow-xl transform hover:-translate-y-1 bg-white">
-              Contact Me
-            </a>
+            <!-- Contact Me link removed -->
           </div>
         </div>
       </div>
@@ -198,57 +201,32 @@ onUnmounted(() => {
         </div>
         <div class="grid md:grid-cols-3 gap-8">
           <!-- Service 1 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary">
-            <div class="w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center mb-6 text-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold mb-3">YouTube Vlogs</h3>
-            <p class="text-gray-600">Engaging storytelling, smooth cuts, and sound design to keep your audience watching.</p>
-          </div>
-          <!-- Service 2 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary">
-            <div class="w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center mb-6 text-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-              </svg>
+          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary flex flex-col items-center text-center">
+            <div class="bg-primary/10 w-[90px] h-[90px] rounded-lg flex items-center justify-center mb-4">
+               <img :src="ReelsShortsIcon" alt="Reels & Shorts" class="w-full h-full object-contain p-2" />
             </div>
             <h3 class="text-xl font-bold mb-3">Reels & Shorts</h3>
-            <p class="text-gray-600">Fast-paced, vertical content optimized for Instagram Reels, TikTok, and YouTube Shorts.</p>
+            <p class="text-gray-600">Capture immediate attention with dynamic, short-form videos optimized for trends and high engagement across platforms like Instagram and YouTube.</p>
+          </div>
+          <!-- Service 2 -->
+          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary flex flex-col items-center text-center">
+            <div class="bg-primary/10 w-[90px] h-[90px] rounded-lg flex items-center justify-center mb-4">
+              <img :src="FacelessIcon" alt="Faceless Videos" class="w-full h-full object-contain p-2" />
+            </div>
+            <h3 class="text-xl font-bold mb-3">Faceless videos</h3>
+            <p class="text-gray-600">Communicate your message effectively without needing to be on camera through professionally edited videos utilizing premium stock footage, motion graphics, and dynamic text.</p>
           </div>
           <!-- Service 3 -->
-          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary">
-            <div class="w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center mb-6 text-primary">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-              </svg>
+          <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-primary/20 hover:border-primary flex flex-col items-center text-center">
+            <div class="bg-primary/10 w-[90px] h-[90px] rounded-lg flex items-center justify-center mb-4">
+              <img :src="TalkingHeadIcon" alt="Talking Head Videos" class="w-full h-full object-contain p-2" />
             </div>
-            <h3 class="text-xl font-bold mb-3">Corporate & Interviews</h3>
-            <p class="text-gray-600">Professional editing for interviews, podcasts, and corporate presentations.</p>
+            <h3 class="text-xl font-bold mb-3">Talking head videos</h3>
+            <p class="text-gray-600">Build authority and a personal connection with your audience while I handle the technical polish, transforming your raw insights into clean, professional, and highly watchable content.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Snippet -->
-    <section class="bg-white py-20 border-t border-gray-100">
-      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-         <!-- Placeholder for Image or Graphic -->
-        <div class="w-full md:w-1/2 aspect-video bg-gray-200 rounded-2xl flex items-center justify-center text-gray-400">
-           <!-- Ideally an image of Anshul or a workspace setup -->
-           <span class="text-lg">Anshul's Workspace / Photo</span>
-        </div>
-        <div class="w-full md:w-1/2">
-          <h2 class="text-3xl font-bold mb-6">About Me</h2>
-          <p class="text-gray-600 mb-6 leading-relaxed">
-            Hi, I'm Anshul. I've been editing videos for over X years. My passion is storytelling through cuts, color, and sound. I understand the pressure of content creation, which is why I aim to be your reliable partner in the post-production process.
-          </p>
-           <RouterLink to="/work" class="text-primary font-medium hover:underline">
-            View My Portfolio &rarr;
-          </RouterLink>
         </div>
       </div>
     </section>
   </div>
 </template>
+```

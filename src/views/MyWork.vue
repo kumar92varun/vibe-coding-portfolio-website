@@ -32,7 +32,7 @@ const setFilter = (category) => {
       
       <!-- Page Header -->
       <div class="text-center mb-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">My Portfolio</h1>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">My Work</h1>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           Browse through my latest video editing projects, featuring vlogs, commercials, and social media content.
         </p>
