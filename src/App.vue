@@ -97,11 +97,11 @@ const closeMobileMenu = () => {
       <footer class="bg-gray-100 text-gray-800 py-20">
         <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
           <div>
-            <h3 class="text-3xl font-bold mb-6 text-gray-900">Anshul's Portfolio</h3>
+            <h2 class="text-3xl font-bold mb-6 text-gray-900">Anshul's Portfolio</h2>
             <p class="text-xl text-gray-600 leading-relaxed max-w-md">Freelance Video Editor helping creators, brands, and businesses tell their story through compelling visuals.</p>
           </div>
           <div class="flex flex-col gap-6">
-            <h4 class="text-2xl font-bold mb-2 text-primary">Get in Touch</h4>
+            <h3 class="text-2xl font-bold mb-2 text-primary">Get in Touch</h3>
             <div class="flex items-center gap-4 text-xl">
               <span class="text-gray-500">Phone:</span> 
               <a href="tel:+919910843251" class="font-semibold hover:text-primary transition-colors">+91-9910843251</a>

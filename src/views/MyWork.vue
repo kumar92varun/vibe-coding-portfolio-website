@@ -67,6 +67,7 @@ const closeModal = () => {
       </div>
 
       <!-- Video Grid -->
+      <h2 class="sr-only">Video Gallery</h2>
       <div v-if="filteredVideos.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <VideoCard 
           v-for="(video, index) in filteredVideos" 
